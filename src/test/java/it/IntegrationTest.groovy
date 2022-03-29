@@ -1,5 +1,6 @@
 package it
 
+import jr.Application
 import jr.domain.route.Departure
 import jr.domain.route.Destination
 import jr.domain.route.Route
@@ -12,12 +13,10 @@ import jr.domain.ticketDetail.Seat
 import jr.domain.ticketDetail.TrainType
 import jr.service.onePersonService.OneAdultPersonService
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.stereotype.Component
+import org.springframework.boot.test.context.SpringBootTest
 import spock.lang.Specification
-import spock.lang.Unroll
 
-@Unroll
-@Component
+@SpringBootTest(classes = Application.class)
 class IntegrationTest extends Specification {
     @Autowired
     OneAdultPersonService oneAdultPersonService
