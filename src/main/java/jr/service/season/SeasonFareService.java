@@ -1,7 +1,7 @@
 package jr.service.season;
 
 import jr.domain.expressFare.ExpressFare;
-import jr.domain.ticketDetail.BoardingDate;
+import jr.domain.expressFareDetail.BoardingDate;
 import jr.repository.season.SeasonFareRepository;
 import jr.repository.season.SeasonFareRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;

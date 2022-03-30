@@ -1,7 +1,7 @@
 package jr.service.groupDiscountSeasonService;
 
 import jr.domain.season.GroupDiscountSeason;
-import jr.domain.ticketDetail.BoardingDate;
+import jr.domain.expressFareDetail.BoardingDate;
 import jr.repository.groupDiscountSeasonRepository.GroupDiscountSeasonRepository;
 import jr.repository.groupDiscountSeasonRepository.GroupDiscountSeasonRepositoryImpl;
 import org.springframework.stereotype.Service;

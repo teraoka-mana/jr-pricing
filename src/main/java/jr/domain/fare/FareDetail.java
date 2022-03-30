@@ -1,7 +1,8 @@
 package jr.domain.fare;
 
-import jr.domain.onePersonFare.OneAdultPersonFare;
-import jr.domain.onePersonFare.OneChildPersonFare;
+import jr.domain.onePersonFare.OneAdultFare;
+import jr.domain.onePersonFare.OneChildFare;
+import jr.domain.roundTrip.RoundTrip;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -11,19 +12,15 @@ import lombok.Getter;
 public class FareDetail {
 
     @Getter
-    private NumberOFAdult numberOFAdult;
+    private NumberOfPeople numberOfPeople;
 
     @Getter
-    private NumberOfChild numberOfChild;
+    private OneAdultFare adultFare;
 
     @Getter
-    private OneAdultPersonFare adultFare;
+    private OneChildFare childFare;
 
     @Getter
-    private OneChildPersonFare childFare;
-
-    public NumberOfPeople getNumberOfPeople(){
-        return new NumberOfPeople(this.numberOFAdult.getValue()+this.numberOfChild.getValue());
-    }
+    private RoundTrip roundTrip;
 
 }

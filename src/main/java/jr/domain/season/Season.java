@@ -1,6 +1,6 @@
 package jr.domain.season;
 
-import jr.domain.ticketDetail.BoardingDate;
+import jr.domain.expressFareDetail.BoardingDate;
 import lombok.Getter;
 
 @Getter

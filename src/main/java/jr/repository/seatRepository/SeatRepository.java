@@ -1,8 +1,7 @@
 package jr.repository.seatRepository;
 
 import jr.domain.expressFare.ExpressFare;
-import jr.domain.ticketDetail.Seat;
-import org.springframework.stereotype.Repository;
+import jr.domain.expressFareDetail.Seat;
 
 
 public interface SeatRepository {

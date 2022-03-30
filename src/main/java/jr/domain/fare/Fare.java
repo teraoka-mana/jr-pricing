@@ -9,4 +9,8 @@ import lombok.Getter;
 public class Fare {
     @Getter
     private final int value;
+
+    public Fare add(Fare fare) {
+        return new Fare(this.getValue() + fare.getValue());
+    }
 }

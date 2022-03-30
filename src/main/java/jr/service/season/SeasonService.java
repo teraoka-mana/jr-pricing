@@ -1,6 +1,6 @@
 package jr.service.season;
 
-import jr.domain.ticketDetail.BoardingDate;
+import jr.domain.expressFareDetail.BoardingDate;
 import jr.domain.season.Season;
 import jr.repository.season.SeasonRepository;
 import jr.repository.season.SeasonRepositoryImpl;

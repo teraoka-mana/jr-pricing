@@ -1,0 +1,1 @@
+package jr.domain.expressFareDetail;import lombok.AllArgsConstructor;@AllArgsConstructorpublic enum Seat {    自由席,    指定席;    public boolean isNonReserve() {        return this.equals(自由席);    }    public boolean isReserve() {        return this.equals(指定席);    }}

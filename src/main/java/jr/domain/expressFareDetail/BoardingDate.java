@@ -1,4 +1,4 @@
-package jr.domain.ticketDetail;
+package jr.domain.expressFareDetail;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

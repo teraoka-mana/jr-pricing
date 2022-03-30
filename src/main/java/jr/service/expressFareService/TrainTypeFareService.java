@@ -1,6 +1,6 @@
 package jr.service.expressFareService;
 
-import jr.domain.ticketDetail.TrainType;
+import jr.domain.expressFareDetail.TrainType;
 import jr.domain.expressFare.ExpressFare;
 import jr.domain.route.Route;
 import jr.repository.trainTypeRepository.TrainTypeFareRepository;

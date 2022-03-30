@@ -8,5 +8,12 @@ import lombok.Getter;
 @EqualsAndHashCode
 public class NumberOfPeople {
     @Getter
-    private final int value;
+    private NumberOFAdult numberOFAdult;
+
+    @Getter
+    private NumberOfChild numberOfChild;
+
+    public int getNumberOfPeople() {
+        return this.numberOFAdult.getValue() + this.numberOfChild.getValue();
+    }
 }

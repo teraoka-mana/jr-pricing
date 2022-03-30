@@ -1,7 +1,7 @@
 package jr.service.expressFareService;
 
 
-import jr.domain.ticketDetail.ExpressDetail;
+import jr.domain.expressFareDetail.ExpressDetail;
 import jr.domain.expressFare.ExpressFare;
 import jr.domain.route.Route;
 import jr.repository.expressFareRepository.ExpressFareRepository;
@@ -34,12 +34,13 @@ public class ExpressFareService {
         return expressFarerepository.findExpressReserveFare(route);
     }
 
-
     public ExpressFare calculation(ExpressDetail expressDetail) {
         return getExpressReserveFare(expressDetail.getRoute()).add(trainTypeFareService.getTrainTypeFare(expressDetail.getTrainType(), expressDetail.getRoute())).add(seasonFareService.getSeasonFare(expressDetail.getBoardingDate())).add(seatService.getSeatReduction(expressDetail.getSeat()));
     }
 
     public ExpressFare getChildExpressReserveFare(ExpressDetail expressDetail) {
-        return new ExpressFare( (int) Math.floor(calculation(expressDetail).getValue() / 2 / 10) * 10);
+        return new ExpressFare((int) Math.floor(calculation(expressDetail).getValue() / 2 / 10) * 10);
     }
+
+
 }

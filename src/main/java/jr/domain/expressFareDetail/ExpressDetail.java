@@ -1,5 +1,6 @@
-package jr.domain.ticketDetail;
+package jr.domain.expressFareDetail;
 
+import jr.domain.roundTrip.RoundTrip;
 import jr.domain.route.Route;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -20,4 +21,7 @@ public class ExpressDetail {
 
     @Getter
     private final BoardingDate boardingDate;
+
+    @Getter
+    private final RoundTrip roundTrip;
 }

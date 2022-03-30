@@ -1,7 +1,7 @@
 package jr.service.expressFareService;
 
 import jr.domain.expressFare.ExpressFare;
-import jr.domain.ticketDetail.Seat;
+import jr.domain.expressFareDetail.Seat;
 import jr.repository.seatRepository.SeatRepository;
 import jr.repository.seatRepository.SeatRepositoryImpl;
 import org.springframework.stereotype.Service;

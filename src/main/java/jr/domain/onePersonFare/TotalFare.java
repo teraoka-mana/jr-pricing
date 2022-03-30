@@ -6,8 +6,7 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @EqualsAndHashCode
-public class OneAdultPersonFare {
+public class TotalFare {
     @Getter
     private final int value;
-
 }

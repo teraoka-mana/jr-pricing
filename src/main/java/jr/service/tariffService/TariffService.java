@@ -23,12 +23,18 @@ public class TariffService {
     }
 
     public int RoundDownRoundTrip(Tariff tariff) {
-        return (int) Math.floor(tariff.getValue() * 0.9 / 10) * 10 * 2;
+        return (int) Math.floor(tariff.getValue() * 0.9 / 10) * 10 ;
     }
 
     public Tariff getChildTariff(Route route) {
-        return new Tariff(new TariffId(),(int) Math.floor(getTariff(route).getValue() / 2 / 10) * 10);
+        return new Tariff(new TariffId(), (int) Math.floor(getTariff(route).getValue() / 2 / 10) * 10);
     }
 
+    public Tariff peakSeasonGroupDiscount(Tariff tariff) {
+        return new Tariff(new TariffId(),(int) Math.floor(tariff.getValue() * 0.9 / 10) * 10);
+    }
 
+    public Tariff regularSeasonGroupDiscount(Tariff tariff) {
+        return new Tariff(new TariffId(),(int) Math.floor(tariff.getValue() * 0.85 / 10) * 10);
+    }
 }
